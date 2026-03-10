@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.UI;
@@ -324,6 +325,7 @@ public class player : MonoBehaviour
         if (_isSliding) return;
         if (_wallJumpLockTimer > 0f) return;
         if (_isGroundSlamming) return;
+        if (_isWallSliding) return;
 
         // Crouch-walk: restrict speed
         float topSpeed = _isRunning ? runSpeed : walkSpeed;
@@ -360,13 +362,27 @@ public class player : MonoBehaviour
         bool pushingIntoWall = (_isTouchingWallLeft && _inputX < 0)
                             || (_isTouchingWallRight && _inputX > 0);
 
-        _isWallSliding  = pushingIntoWall && _rb.linearVelocity.y < 0;
+        if (pushingIntoWall && _rb.linearVelocityY < 0)
+        {
+            // Enter or stay in wall slide
+            _isWallSliding = true;
+        }
+        else if (_isWallSliding)
+        {
+            // Only exit if the player has clearly pushed away or hte wall is gone
+            bool wallGone = !_isTouchingWallLeft && !_isTouchingWallRight;
+            bool pushedAway = (_isTouchingWallLeft && _inputX >= 0) 
+                            || (_isTouchingWallRight && _inputX <= 0);
+
+            if (wallGone || pushedAway) 
+                _isWallSliding = false;
+        }
 
         if (_isWallSliding)
         {
-            // Clamp downward speed to wall-slide speed
-            float clamptedY = Mathf.Max(_rb.linearVelocityY, -wallSlideSpeedScale);
-            _rb.linearVelocity = new Vector2(_rb.linearVelocityX, clamptedY);
+            // Clamp downward speed - set velocity directly so gravity can't accumulate beyond slide speed 
+            _rb.gravityScale = 0f;
+            _rb.linearVelocity = new Vector2(0f, Mathf.Max(_rb.linearVelocityY, -wallSlideSpeedScale));
         }
     }
 
@@ -429,8 +445,7 @@ public class player : MonoBehaviour
     void HandleGroundSlam()
     {
         // Trigger: Crouch pressed while airborne
-        if (_groundSlamPressedThisFrame && !_isGrounded && !_isGroundSlamming
-            && _isCrouching && _rb.linearVelocityY < 0)
+        if (_groundSlamPressedThisFrame && !_isGrounded && !_isGroundSlamming)
         {
             _isGroundSlamming = true;
             _isWallSliding = false;

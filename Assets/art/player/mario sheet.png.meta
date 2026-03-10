@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,925 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mario sheet_0
+      name: idle
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1500
-        height: 620
+        x: 1050
+        y: 558
+        width: 50
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3a6017faa36f93260800000000000000
-      internalID: 7077959021301401251
+      spriteID: 7272071c7e815fc4aa6ed570c2c00e27
+      internalID: -1088652638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15f398326921fd418d3af47afc8a503
+      internalID: -197205572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843af4919b0351a468e3cd3a15b8b2f6
+      internalID: 448740046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3456b9eefb0a6b741b7e30fcdec44a1e
+      internalID: 365956696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306b4ef58a73d5f4586cf4003cdbaeab
+      internalID: 1728812237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629c3efdcf7e4b34a9ddcbff66f5f1b8
+      internalID: -1853674282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 495
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ab15b661e9159459c12732adbdd116
+      internalID: -1342052995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8719060950ef8dc439d6c60973df48ec
+      internalID: 207150421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b60c133a2e3e7143a16ebaf810a1641
+      internalID: -1965320016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 9
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0d9588d1af1154f8ca58cfeed1ba8c
+      internalID: 1411288325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 10
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 497
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dcbc4c5865fb44b8f69094acb68f3f
+      internalID: 860220603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 11
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 495
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8d190184bf831468626dbe71194410
+      internalID: -1698109830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 12
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1239cda871fe5984fad3fbe21ed88de4
+      internalID: -224966952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 13
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f706ad03306689a41a74312b5f66addd
+      internalID: -763186392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 14
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5979faed9f8c24149ad760638dd873b7
+      internalID: 711739317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 15
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39821a2fc1f2c0d40912521f65e112d5
+      internalID: 817514021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 16
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52cd09da665b0746ba92e80743208d9
+      internalID: 435590000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 17
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 496
+        width: 50
+        height: 62
+      alignment: 9
+      pivot: {x: 0.55251956, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32891c6043739154d8f48273493b6c85
+      internalID: 1323293062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 18
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57322e51737ebca4e96a16605f3baa97
+      internalID: 1627197989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 19
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6cbdde6d22949459b6e8f88de3c8bf
+      internalID: -1890725660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 20
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 497
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6dfd0b4e5672c4186d4f19b1a32f6f
+      internalID: 720169788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 21
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd3d5fca3c3ce54e816c794ab6678b2
+      internalID: 2100011103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move 22
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 496
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8d87b5601b6a64a9b85cec117ad976
+      internalID: 1763970570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 390
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840d7722de4367b41a1371cfa983bb0c
+      internalID: -530563142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump10
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 397
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93677f23bd47ba44a32f05ba7359cba
+      internalID: 741861745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump11
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 402
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4635ffa276644342a0a43280f5719af
+      internalID: 566762478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump12
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 406
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2719c049d0825564eaf79c55f82c4592
+      internalID: 909145790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 405
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b62416ac5057247b4e6750dbf2ee16
+      internalID: 1447776287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump14
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 403
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18175a15306900248bbfaec60b0e9f99
+      internalID: -1512587258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump15
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 400
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b281b71505d434db26c9f9bffa22d6
+      internalID: -1564628958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump5
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 340
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c41d1886d311aa4fa59d4ea98fa795f
+      internalID: -2144074594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 354
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f785e3682d48f5746a47d591cd094dd7
+      internalID: -1400317357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump7
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 368
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af909568504f60345bc8640680bc82d2
+      internalID: 76810606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump8
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 380
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bd7dcdfdcb45c4fa338840319e2fd1
+      internalID: -2093878567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 291
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87a713020bd2ff4bb5a74e8b1429e19
+      internalID: -1149037665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 308
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac1fce9dc9af0645a68ab3a1846133d
+      internalID: -624365891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 325
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b129e75235a48ed40b46604781fa326d
+      internalID: 1069962148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump 1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 273
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e729173cc48274885a27a1b7125a89
+      internalID: 2114695480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 208
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9511beae748dfc542898e35abc356efb
+      internalID: 967888179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kickoff
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 84
+        width: 55
+        height: 72
+      alignment: 9
+      pivot: {x: 0.42042348, y: 0.5128732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5533a1c30c5aa8f41b92fc6f831d9d05
+      internalID: -269496124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slam
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 87
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b6e71da35b4ab4c962177953677f26
+      internalID: -1977296911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall slide
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 13
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7eceda5481e3b43a1f3e19f05fd5e9
+      internalID: 1997288209
       vertices: []
       indices: 
       edges: []
@@ -138,7 +1040,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e83b856943a0e98458678f436fcaae8a
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +1048,310 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":30.0,"y":10.0},"gridSpriteSize":{"x":50.0,"y":62.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      crouch: 967888179
+      idle: -1088652638
+      jump 1: 2114695480
+      jump10: 741861745
+      jump11: 566762478
+      jump12: 909145790
+      jump13: 1447776287
+      jump14: -1512587258
+      jump15: -1564628958
+      jump2: -1149037665
+      jump3: -624365891
+      jump4: 1069962148
+      jump5: -2144074594
+      jump6: -1400317357
+      jump7: 76810606
+      jump8: -2093878567
+      jump9: -530563142
+      kickoff: -269496124
       mario sheet_0: 7077959021301401251
+      mario sheet_1: -1397353848
+      mario sheet_10: -1503202847
+      mario sheet_101: 2143497249
+      mario sheet_103: -941268722
+      mario sheet_105: 1659016301
+      mario sheet_106: 2115617165
+      mario sheet_107: 684399039
+      mario sheet_108: -2100539640
+      mario sheet_109: -1060942962
+      mario sheet_11: -2125544128
+      mario sheet_110: -2031989343
+      mario sheet_111: 597725582
+      mario sheet_112: 780613548
+      mario sheet_113: 1050216985
+      mario sheet_114: 2120253978
+      mario sheet_115: -1395556377
+      mario sheet_116: -1168361633
+      mario sheet_117: 1818369141
+      mario sheet_118: 1488845280
+      mario sheet_119: 1403368495
+      mario sheet_12: -129643448
+      mario sheet_120: -2131254830
+      mario sheet_121: -481318921
+      mario sheet_123: 284031255
+      mario sheet_125: -185512349
+      mario sheet_127: 1093195591
+      mario sheet_128: -814340589
+      mario sheet_129: -1115362301
+      mario sheet_13: 1748494662
+      mario sheet_130: -149517623
+      mario sheet_131: 1035149815
+      mario sheet_132: 1956743768
+      mario sheet_133: 421377106
+      mario sheet_134: 641022575
+      mario sheet_135: 1001832742
+      mario sheet_136: -1201821977
+      mario sheet_137: -1734540926
+      mario sheet_138: -1433210141
+      mario sheet_139: -1749188867
+      mario sheet_14: -981195777
+      mario sheet_140: 64581495
+      mario sheet_141: 790267155
+      mario sheet_142: 1700653781
+      mario sheet_143: 26275593
+      mario sheet_144: 930442464
+      mario sheet_145: -877849192
+      mario sheet_146: 148930170
+      mario sheet_147: 541213823
+      mario sheet_148: -660729177
+      mario sheet_149: 1243045427
+      mario sheet_15: -260709243
+      mario sheet_151: 661492885
+      mario sheet_152: -237585626
+      mario sheet_153: -1568775784
+      mario sheet_154: -1791086469
+      mario sheet_155: 2053581136
+      mario sheet_156: -807137252
+      mario sheet_157: -699487031
+      mario sheet_158: 1904392417
+      mario sheet_159: 1873713441
+      mario sheet_16: -410667700
+      mario sheet_160: 1780399498
+      mario sheet_161: -1199944525
+      mario sheet_162: 1364239645
+      mario sheet_163: -65412449
+      mario sheet_164: -1860704590
+      mario sheet_165: -1296261411
+      mario sheet_166: -383112670
+      mario sheet_167: 1596820534
+      mario sheet_168: -434445911
+      mario sheet_169: -2114612724
+      mario sheet_17: -1106825196
+      mario sheet_170: 1979343597
+      mario sheet_171: 1558406928
+      mario sheet_172: 1603669636
+      mario sheet_173: -1203491855
+      mario sheet_174: -1035221970
+      mario sheet_175: -1261765383
+      mario sheet_176: 1209489595
+      mario sheet_177: 857116282
+      mario sheet_178: 1355889551
+      mario sheet_179: 1473433140
+      mario sheet_18: 990305238
+      mario sheet_180: -801516896
+      mario sheet_181: -1057689258
+      mario sheet_182: 662097436
+      mario sheet_183: -1947099489
+      mario sheet_184: 492787170
+      mario sheet_185: -93402662
+      mario sheet_186: -1515084651
+      mario sheet_187: -1549704303
+      mario sheet_188: -344066261
+      mario sheet_189: 1834854972
+      mario sheet_19: -404062773
+      mario sheet_190: -966926570
+      mario sheet_191: -1456622653
+      mario sheet_192: -1219376196
+      mario sheet_193: 720918842
+      mario sheet_194: 2008060462
+      mario sheet_196: -1097099885
+      mario sheet_197: -1843802383
+      mario sheet_198: -1233182400
+      mario sheet_199: 992008781
+      mario sheet_2: -1458763136
+      mario sheet_20: -1086209352
+      mario sheet_200: 2120839110
+      mario sheet_201: -126084305
+      mario sheet_202: -500720735
+      mario sheet_203: 980779533
+      mario sheet_204: -43867506
+      mario sheet_205: -551545822
+      mario sheet_206: -1555726413
+      mario sheet_207: -67122902
+      mario sheet_208: 763371205
+      mario sheet_209: 49131095
+      mario sheet_210: -728693901
+      mario sheet_211: -183472891
+      mario sheet_212: -226070656
+      mario sheet_213: -881930072
+      mario sheet_214: -1019928287
+      mario sheet_215: -1459390723
+      mario sheet_216: -2087704263
+      mario sheet_217: -1288700476
+      mario sheet_218: -1090227763
+      mario sheet_219: -1483307920
+      mario sheet_22: 1511561816
+      mario sheet_220: 1939847656
+      mario sheet_221: 732788144
+      mario sheet_222: 2067214517
+      mario sheet_223: -902775633
+      mario sheet_224: 167877277
+      mario sheet_225: 72251421
+      mario sheet_226: -1078921463
+      mario sheet_227: 151038418
+      mario sheet_228: -31076269
+      mario sheet_229: -1285636873
+      mario sheet_23: -2096607486
+      mario sheet_230: 1791252925
+      mario sheet_231: -2081614518
+      mario sheet_232: 1235376324
+      mario sheet_233: 1752199929
+      mario sheet_234: -645632536
+      mario sheet_235: 380126270
+      mario sheet_236: -1625906551
+      mario sheet_237: 1542119420
+      mario sheet_239: 1531387589
+      mario sheet_24: -1488737448
+      mario sheet_240: -1752306657
+      mario sheet_241: 1796937354
+      mario sheet_242: -700600707
+      mario sheet_243: 2035075282
+      mario sheet_244: 55350317
+      mario sheet_245: -146392977
+      mario sheet_246: -899324969
+      mario sheet_247: -55764891
+      mario sheet_248: -531848748
+      mario sheet_249: 1372993567
+      mario sheet_25: -736211183
+      mario sheet_250: 646625547
+      mario sheet_251: -1475090
+      mario sheet_252: 842677776
+      mario sheet_253: -1710257992
+      mario sheet_254: 567100467
+      mario sheet_255: 758001322
+      mario sheet_256: 57626987
+      mario sheet_257: 2080234702
+      mario sheet_258: 2118523736
+      mario sheet_259: -594426662
+      mario sheet_26: 252463710
+      mario sheet_260: -673431273
+      mario sheet_261: -1040619175
+      mario sheet_262: -7384253
+      mario sheet_263: -2082800479
+      mario sheet_264: 910911039
+      mario sheet_265: -767046574
+      mario sheet_267: 177951276
+      mario sheet_268: 2103279174
+      mario sheet_269: 449470209
+      mario sheet_27: -1527875817
+      mario sheet_270: 599848529
+      mario sheet_271: 1123767688
+      mario sheet_272: 2016805584
+      mario sheet_273: 1221286961
+      mario sheet_274: 207908165
+      mario sheet_275: 630199126
+      mario sheet_276: 1171682288
+      mario sheet_277: 866727072
+      mario sheet_278: -1874936608
+      mario sheet_279: 23280355
+      mario sheet_28: 597795253
+      mario sheet_280: -460490515
+      mario sheet_281: -222361413
+      mario sheet_282: 178172321
+      mario sheet_283: 1937992366
+      mario sheet_284: -1716696794
+      mario sheet_285: 817577994
+      mario sheet_286: -1852030179
+      mario sheet_287: 1474187679
+      mario sheet_288: 1492842099
+      mario sheet_289: -177225100
+      mario sheet_29: 1552892166
+      mario sheet_290: -878872827
+      mario sheet_291: -1362416459
+      mario sheet_292: 1778356736
+      mario sheet_293: 1513858970
+      mario sheet_294: 1899665549
+      mario sheet_295: 1528214214
+      mario sheet_296: -1553229000
+      mario sheet_297: -305020719
+      mario sheet_299: -1764562688
+      mario sheet_3: 1892137398
+      mario sheet_4: 894264098
+      mario sheet_5: -11553734
+      mario sheet_52: 1364219985
+      mario sheet_53: -801461973
+      mario sheet_54: 1265045134
+      mario sheet_55: -806736923
+      mario sheet_56: -1046256554
+      mario sheet_57: -762696221
+      mario sheet_58: -2099008551
+      mario sheet_59: 1445996029
+      mario sheet_6: 466646492
+      mario sheet_60: 764436488
+      mario sheet_61: -1133336045
+      mario sheet_62: 1362394352
+      mario sheet_63: -1952348862
+      mario sheet_64: 1370962738
+      mario sheet_65: 728346832
+      mario sheet_66: 1193455717
+      mario sheet_67: -1572451960
+      mario sheet_68: 350775370
+      mario sheet_69: 990638032
+      mario sheet_7: 831111713
+      mario sheet_70: 1789450524
+      mario sheet_71: -1525591886
+      mario sheet_72: -1456664714
+      mario sheet_73: 1817075485
+      mario sheet_74: -647470654
+      mario sheet_75: 262728401
+      mario sheet_77: -1971481804
+      mario sheet_79: -1490243302
+      mario sheet_8: 87518518
+      mario sheet_81: 1637083347
+      mario sheet_83: 285868040
+      mario sheet_85: -1204369093
+      mario sheet_87: -1594513134
+      mario sheet_89: -380679411
+      mario sheet_9: 106388297
+      mario sheet_90: -480686075
+      mario sheet_91: 170793797
+      mario sheet_92: -301776806
+      mario sheet_93: 1338061329
+      mario sheet_94: 1613476312
+      mario sheet_95: 1364713011
+      mario sheet_96: 787123363
+      mario sheet_97: -682162792
+      mario sheet_99: 1064931522
+      move: -1965320016
+      move 1: -197205572
+      move 10: 860220603
+      move 11: -1698109830
+      move 12: -224966952
+      move 13: -763186392
+      move 14: 711739317
+      move 15: 817514021
+      move 16: 435590000
+      move 17: 1323293062
+      move 18: 1627197989
+      move 19: -1890725660
+      move 2: 448740046
+      move 20: 720169788
+      move 21: 2100011103
+      move 22: 1763970570
+      move 9: 1411288325
+      move3: 365956696
+      move4: 1728812237
+      move5: -1853674282
+      move6: -1342052995
+      move8: 207150421
+      slam: -1977296911
+      wall slide: 1997288209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
